@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The price is right</title>
+</head>
+<body>
+    
+    <script>
+        const playerName = prompt("What is your name?");
+        const randomNumber = Math.floor(Math.random()*100)+1;
+        let playerTry = parseInt(prompt("enter a number between 1 and 100"));
+    
+                while(playerTry !== randomNumber){
+                        
+                        if (isNaN(playerTry)){
+                            alert("this is not a number");
+                            playerTry = parseInt(prompt("enter a number between 1 and 100"));
+                        }
+
+                        else if (playerTry < 1 || playerTry >100){
+                            alert("this number is not between 1 and 100");
+                            playerTry = parseInt(prompt("enter a number between 1 and 100"));
+                        }
+                    
+                        else if (playerTry > randomNumber){
+                            alert("it is less");
+                            playerTry = parseInt(prompt("enter a number between 1 and 100"));
+                        }
+                        else {
+                            alert("it is more");
+                            playerTry = parseInt(prompt("enter a number between 1 and 100"));
+                        }
+                }
+                alert(playerName + " wins")   
+               
+                
+            
+        
+            
+           
+    </script>
+</body>
+</html>
