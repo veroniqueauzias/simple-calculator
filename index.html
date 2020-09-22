@@ -7,15 +7,30 @@
 </head>
 <body>
    <script>
-      
-      let firstValue = prompt("enter the 1st value");
-      let operator = prompt("enter the operator");
-      let secondValue = prompt("enter the second value");
+     const firstValue = parseInt(prompt("premiere valeur"));
+     const operator = prompt ("operator");
+     const secondValue = parseInt(prompt("entrez 2d valeur"));
 
-      console.log(firstValue);
-      console.log(secondValue);
-      console.log(operator);
-
+     switch(operator){
+         case "+":
+            console.log(firstValue + secondValue);
+            break;
+        case "-":
+            console.log(firstValue - secondValue);
+            break;
+        case "/":
+            console.log(firstValue / secondValue);
+            break;
+        case "*":
+            console.log(firstValue * secondValue);
+            break;
+        default:
+            console.log("invalid operator");
+            break;
+        
+            
+     }
+     
    </script>
 </body>
 </html>
